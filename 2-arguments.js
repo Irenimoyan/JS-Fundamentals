@@ -1,9 +1,9 @@
-let arg = process.argv.slice(2);
+let arg = process.argv[2];
 
-if (arg.length === 0) {
-    console.log("No Argument");
-} else if (arg.length === 1) {
+if (!arg) {
+    console.log("No argument");
+} else if (process.argv.length === 3) {
     console.log("Argument found");
 } else {
-    console.log("Arguments found")
+    console.log("Arguments found");
 }
